@@ -288,6 +288,4 @@ MIT © xiaodong.zhu
 
 ## 📫 联系
 
-- GitHub Issues: [提交反馈](https://github.com/your-username/ai-dev-assistant/issues)
-
-**“Don’t tell me about your degree. Show me your code.” — 马斯克**
+- GitHub Issues: [提交反馈](https://github.com/xiaodongzxd/ai-dev-assistant/issues)
