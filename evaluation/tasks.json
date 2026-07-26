@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "description": "Write a function that returns the factorial of a number.",
+    "expected_behavior": "function factorial(n) returns n! for non-negative integers, raises ValueError for negative.",
+    "module_name": "math_utils",
+    "test_code": null
+  },
+  {
+    "id": 2,
+    "description": "Write a function to check if a string is a palindrome.",
+    "expected_behavior": "returns True for palindromes, False otherwise, case-insensitive.",
+    "module_name": "string_utils",
+    "test_code": null
+  },
+  {
+    "id": 3,
+    "description": "Write a class representing a simple bank account with deposit, withdraw, and balance methods.",
+    "expected_behavior": "withdraw should not allow negative balance.",
+    "module_name": "bank_account",
+    "test_code": null
+  },
+  {
+    "id": 4,
+    "description": "Write a function that finds the maximum value in a list.",
+    "expected_behavior": "returns the maximum value, raises ValueError for empty list.",
+    "module_name": "list_utils",
+    "test_code": null
+  },
+  {
+    "id": 5,
+    "description": "Write a function that merges two sorted lists into one sorted list.",
+    "expected_behavior": "returns a new sorted list containing all elements from both input lists.",
+    "module_name": "merge_utils",
+    "test_code": null
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "total_tasks": 5,
+  "successful": 2,
+  "success_rate": 0.4,
+  "avg_time_seconds": 110.03985195159912,
+  "syntax_ok_count": 5,
+  "tests_passed_count": 2,
+  "detailed_results": [
+    {
+      "task_id": 1,
+      "success": true,
+      "syntax_ok": true,
+      "syntax_error": null,
+      "tests_passed": true,
+      "test_details": {
+        "passed": 4,
+        "failed": 0,
+        "errors": 0,
+        "output": "============================= test session starts =============================\nplatform win32 -- Python 3.11.9, pytest-9.1.0, pluggy-1.6.0 -- F:\\kaiming\\code\\ai-dev-assistant\\venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: C:\\Users\\XIAODO~1\\AppData\\Local\\Temp\\tmp982ylwdm\nplugins: anyio-4.13.0, langsmith-0.8.15, pyfakefs-6.2.0, asyncio-1.4.0, cov-7.1.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ...",
+        "error": "",
+        "retries": 1
+      },
+      "time_seconds": 60.70538949966431,
+      "retry_count": 0,
+      "code_preview": "def factorial(n: int) -> int:\n    \"\"\"\n    Calculate the factorial of a non-negative integer.\n\n    Args:\n        n (int): A non-negative integer whose factorial is to be calculated.\n\n    Returns:\n        int: The factorial of the input integer.\n    \"\"\"\n    if not isinstance(n, int) or n < 0:\n        raise ValueError(\"Input must be a non-negative integer.\")\n    \n    # Base case for factorial of 0 or 1\n    if n == 0 or n == 1:\n        return 1\n    \n    # Recursive calculation\n    result = 1\n    for...",
+      "module_name": "math_utils",
+      "description": "Write a function that returns the factorial of a number."
+    },
+    {
+      "task_id": 2,
+      "success": false,
+      "syntax_ok": true,
+      "syntax_error": null,
+      "tests_passed": false,
+      "test_details": {
+        "passed": 0,
+        "failed": 0,
+        "errors": "Test collection failed: ============================= test session starts =============================\nplatform win32 -- Python 3.11.9, pytest-9.1.0, pluggy-1.6.0 -- F:\\kaiming\\code\\ai-dev-assistant\\venv\\Scripts\\python.exe\n",
+        "output": "",
+        "error": "All retries exhausted. Last error: Test collection failed: ============================= test session starts =============================\nplatform win32 -- Python 3.11.9, pytest-9.1.0, pluggy-1.6.0 -- F:\\kaiming\\code\\ai-dev-assistant\\venv\\Scripts\\python.exe\n",
+        "retries": 2
+      },
+      "time_seconds": 86.09277153015137,
+      "retry_count": 0,
+      "code_preview": "def check_palindrome(input_string: str) -> bool:\n    try:\n        # Normalize the string by removing spaces, converting to lowercase, and stripping leading/trailing whitespace\n        normalized_string = input_string.replace(\" \", \"\").lower().strip()\n        \n        # Check if the string reads the same forwards and backwards\n        return normalized_string == normalized_string[::-1]\n    \n    except (IOError, TimeoutError) as e:\n        print(f\"An error occurred: {e}\")\n        return False\n\n# Ex...",
+      "module_name": "string_utils",
+      "description": "Write a function to check if a string is a palindrome."
+    },
+    {
+      "task_id": 3,
+      "success": false,
+      "syntax_ok": true,
+      "syntax_error": null,
+      "tests_passed": false,
+      "test_details": {
+        "passed": 0,
+        "failed": 0,
+        "errors": "",
+        "output": "",
+        "error": "All retries exhausted. Last error: ",
+        "retries": 2
+      },
+      "time_seconds": 174.08705496788025,
+      "retry_count": 0,
+      "code_preview": "class BankAccount:\n    def __init__(self, initial_balance=0):\n        # Initialize the bank account with a given balance (default is 0)\n        self.balance = initial_balance\n\n    def deposit(self, amount):\n        # Add money to the balance\n        if amount <= 0:\n            raise ValueError(\"Deposit amount must be positive\")\n        self.balance += amount\n        return f\"Deposited ${amount}. New balance: ${self.balance}\"\n\n    def withdraw(self, amount):\n        # Remove money from the balanc...",
+      "module_name": "bank_account",
+      "description": "Write a class representing a simple bank account with deposit, withdraw, and balance methods."
+    },
+    {
+      "task_id": 4,
+      "success": true,
+      "syntax_ok": true,
+      "syntax_error": null,
+      "tests_passed": true,
+      "test_details": {
+        "passed": 5,
+        "failed": 0,
+        "errors": 0,
+        "output": "============================= test session starts =============================\nplatform win32 -- Python 3.11.9, pytest-9.1.0, pluggy-1.6.0 -- F:\\kaiming\\code\\ai-dev-assistant\\venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: C:\\Users\\XIAODO~1\\AppData\\Local\\Temp\\tmplec9v8ph\nplugins: anyio-4.13.0, langsmith-0.8.15, pyfakefs-6.2.0, asyncio-1.4.0, cov-7.1.0\nasyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ...",
+        "error": "",
+        "retries": 0,
+        "auto_fixed": true
+      },
+      "time_seconds": 86.9829511642456,
+      "retry_count": 0,
+      "code_preview": "def find_maximum(numbers: list) -> int:\n    \"\"\"\n    Finds the maximum value in a given list of numbers.\n\n    Args:\n        numbers (list): A list of integers or floats.\n\n    Returns:\n        int: The maximum value found in the list.\n    \n    Raises:\n        ValueError: If the input is not a list or contains non-numeric elements.\n    \"\"\"\n    if not isinstance(numbers, list):\n        raise ValueError(\"Input must be a list.\")\n    \n    for num in numbers:\n        if not isinstance(num, (int, float))...",
+      "module_name": "list_utils",
+      "description": "Write a function that finds the maximum value in a list."
+    },
+    {
+      "task_id": 5,
+      "success": false,
+      "syntax_ok": true,
+      "syntax_error": null,
+      "tests_passed": false,
+      "test_details": {
+        "passed": 0,
+        "failed": 0,
+        "errors": "",
+        "output": "",
+        "error": "All retries exhausted. Last error: ",
+        "retries": 2
+      },
+      "time_seconds": 142.33109259605408,
+      "retry_count": 0,
+      "code_preview": "def merge_sorted_lists(list1: list, list2: list) -> list:\n    \"\"\"\n    Merge two sorted lists into one sorted list.\n\n    Args:\n    list1 (list): The first sorted list.\n    list2 (list): The second sorted list.\n\n    Returns:\n    list: A new sorted list containing all elements from both input lists.\n    \"\"\"\n    try:\n        # Initialize pointers for each list and the merged result list\n        i, j = 0, 0\n        merged_list = []\n\n        # Loop until one of the lists is exhausted\n        while i <...",
+      "module_name": "merge_utils",
+      "description": "Write a function that merges two sorted lists into one sorted list."
+    }
+  ],
+  "timestamp": "2026-07-19 11:22:34"
+}

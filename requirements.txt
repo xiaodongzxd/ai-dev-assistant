@@ -1,0 +1,27 @@
+# 核心框架
+langgraph>=0.1.0
+langchain>=0.2.0
+langchain-ollama>=0.1.0
+
+# LLM本地推理
+ollama>=0.3.0
+
+# 工具库
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+loguru>=0.7.0
+requests>=2.31.0
+tenacity>=8.2.3
+
+# Git和GitHub集成
+gitpython>=3.1.40
+PyGithub>=2.1.1
+
+# 数据处理和评估
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0   # 可选，用于长尾场景聚类
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pyfakefs>=5.0.0       # 可选，用于单元测试
